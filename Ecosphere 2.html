@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="carbon-section">
+        <h2>Track Your Carbon Footprint</h2>
+        <select id="transportType">
+            <option value="car">Car (0.25 kg/km)</option>
+            <option value="bus">Bus (0.05 kg/km)</option>
+            <option value="bicycle">Bicycle (0.01 kg/km)</option>
+            <option value="walking">Walking (0.00 kg/km)</option>
+        </select>
+        <input type="number" id="distanceInput" placeholder="Enter distance traveled (km)">
+        <button onclick="trackCarbon()">Track Carbon Footprint</button>
+        <button onclick="showTotalCarbon()">Show Total Carbon Footprint</button> <!-- New button -->
+    </div>
+    <canvas id="carbonChart" width="400" height="200"></canvas>
+
+    <!-- Modal for Total Carbon Footprint -->
+    <div id="carbonModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Total Carbon Footprint</h2>
+            <p id="totalCarbonOutput"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

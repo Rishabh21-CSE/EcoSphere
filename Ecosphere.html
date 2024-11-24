@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoTrack - Waste Reduction & Carbon Footprint App</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>EcoTrack</h1>
+        
+        <!-- Waste Tracking -->
+        <div class="goal-section">
+            <h2>Set Your Waste Reduction Goal</h2>
+            <input type="number" id="goalInput" placeholder="Enter waste goal in kg">
+            <button onclick="setGoal()">Set Goal</button>
+        </div>
+        <div class="tracker-section">
+            <h2>Track Your Waste</h2>
+            <input type="number" id="wasteInput" placeholder="Enter waste amount in kg">
+            <button onclick="trackWaste()">Track Waste</button>
+        </div>
+        <div class="status-section">
+            <h2>Your Progress</h2>
+            <p id="goalStatus"></p>
+            <p id="currentWaste"></p>
+        </div>
+        
+        <!-- Carbon Footprint Tracking -->
+       <button><a href="Ecosphere 2.html">Carbon Footprint</a></button>
+
+        <div class="tips-section">
+            <h2>Waste Reduction Tips</h2>
+            <ul id="tipsList">
+                <li>Use reusable bags and bottles.</li>
+                <li>Compost food scraps.</li>
+                <li>Buy in bulk to reduce packaging.</li>
+                <li>Repair instead of replacing.</li>
+                <li>Educate others about sustainability.</li>
+            </ul>
+        </div>
+    </div>
+    <footer>&copy;This is created by Rishabh Mishra</footer>
+    <script src="script.js"></script>
+</body>
+</html>
